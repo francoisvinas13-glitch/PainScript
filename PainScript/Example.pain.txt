@@ -1,0 +1,45 @@
+
+# =====================
+# VARIABLES
+# =====================
+
+prendre farine = 100
+prendre eau = 50
+prendre levain = 10
+
+sortir_du_four("🥐 Début du programme PainScript")
+
+# =====================
+# CALCULS
+# =====================
+
+prendre pate = farine + eau + levain
+
+sortir_du_four(pate)
+
+# =====================
+# CONDITION
+# =====================
+
+si pate > 120 alors
+    sortir_du_four("🥖 pâte trop lourde")
+sinon
+    sortir_du_four("🥐 pâte parfaite")
+fin
+
+# =====================
+# BOUCLE
+# =====================
+
+prendre i = 0
+
+tant_que i < 5
+    sortir_du_four(i)
+    prendre i = i + 1
+fin
+
+# =====================
+# FIN
+# =====================
+
+sortir_du_four("🔥 cuisson terminée")
